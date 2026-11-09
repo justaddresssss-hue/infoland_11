@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Цветной металл - Сталь</title>
+    <title>Листы из металла - Сталь</title>
+    <link rel="icon" href="data:,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <div class="container">
@@ -21,114 +21,110 @@
 
         <main class="product-card">
             <h1 class="product-title">Листы из металла - Сталь</h1>
-            <p class="product-subtitle">Материалы для DIY и проффесианальных задач.</p>
+            <p class="product-subtitle">Материалы для DIY и профессиональных задач.</p>
 
+            <!-- В product-grid должно быть ТОЛЬКО два ребёнка: left-column и right-column -->
             <div class="product-grid">
 
+                <!-- ЛЕВАЯ КОЛОНКА -->
+                <div class="left-column">
 
-
-
-                        <section class="carousel-section">
+                    <!-- Карусель 1: виды листов -->
+                    <section class="carousel-section">
                         <h2 class="carousel-title">Виды стальных листов</h2>
                         <p class="carousel-subtitle">Листайте для просмотра</p>
- 
+
                         <div class="carousel">
                             <button class="carousel-btn carousel-btn-prev" aria-label="Назад" type="button">
                                 <i class="fas fa-chevron-left"></i>
                             </button>
- 
-                            <!-- ОДИН трек, а все карточки внутри него -->
-                            <div class="carousel-track" tabindex="0" aria-label="Виды латунных листов">
- 
+
+                            <div class="carousel-track" tabindex="0" aria-label="Виды стальных листов">
                                 <article class="carousel-card">
                                     <div class="carousel-image">
-                                      <img src="FOT_ART_U01_466268_jSALL_jAIN_rV1.jpg.webp" alt="Сталь" loading="lazy">
+                                        <img src="FOT_ART_U01_466268_jSALL_jAIN_rV1.jpg.webp" alt="Гладкий стальной лист Gah Alberts" loading="lazy">
                                     </div>
                                     <div class="carousel-caption">
                                         <h3>Сталь (GAH ALBERTS)</h3>
-                                        <p>Гладкий стальной лист Gah Alberts – тип листового проката со сглаженной ровной поверхностью. Это прочный, долговечный, пластичный 
-                                          конструкционный и отделочный материал, а также полуфабрикат для изготовления штампованных и гнутых деталей.</p>
+                                        <p>Гладкий стальной лист Gah Alberts – тип листового проката со сглаженной ровной поверхностью. Это прочный, долговечный, пластичный конструкционный и отделочный материал, а также полуфабрикат для изготовления штампованных и гнутых деталей.</p>
                                     </div>
                                 </article>
- 
+
                                 <article class="carousel-card">
                                     <div class="carousel-image">
-                                        <img src="tianutyi.jpg.webp" alt="Штрекметалл" loading="lazy">
+                                        <img src="tianutyi.jpg.webp" alt="Стальной лист штрекметалл" loading="lazy">
                                     </div>
                                     <div class="carousel-caption">
                                         <h3>Сталь штрекметалл</h3>
-                                        <p>Лист из тянутого металла Gah Alberts изготавливается методом просечки и протяжки металлического листа. 
-                                            Ячейки располагаются в шахматном порядке. Изделия лёгкие, при этом хорошо держат форму, что облегчает резку и монтаж.
-                                            Применяются для защиты поверхностей, требующих прохождения воздуха, например, радиаторов отопления. Является подходящим 
-                                            материалом для изготовления нескользящих решетчатых настилов в производственных помещениях, на площадках техобслуживания,
-                                            ступенях маршевых лестниц и др.</p>
+                                        <p>Лист из тянутого металла Gah Alberts изготавливается методом просечки и протяжки металлического листа. Ячейки располагаются в шахматном порядке. Изделия лёгкие, при этом хорошо держат форму, что облегчает резку и монтаж. Применяются для защиты поверхностей, требующих прохождения воздуха, например, радиаторов отопления. Является подходящим материалом для изготовления нескользящих решетчатых настилов в производственных помещениях, на площадках техобслуживания, ступенях маршевых лестниц и др.</p>
                                     </div>
                                 </article>
- 
-                                
- 
                             </div>
- 
+
                             <button class="carousel-btn carousel-btn-next" aria-label="Вперёд" type="button">
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </div>
- 
+
                         <div class="carousel-dots"></div>
                     </section>
 
+                    <!-- Карусель 2: фото -->
+                    <section class="carousel-section">
+                        <h2 class="carousel-title">Фото</h2>
+                        <p class="carousel-subtitle">Листайте для просмотра</p>
 
+                        <div class="carousel">
+                            <button class="carousel-btn carousel-btn-prev" aria-label="Назад" type="button">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
 
-                
-               
+                            <div class="carousel-track" tabindex="0" aria-label="Фото">
+                                <!-- Шаблон карточки: копируйте весь блок article для каждого фото -->
+                                <article class="carousel-card">
+                                    <div class="carousel-image">
+                                        <!-- <img src="ВАШ_ФАЙЛ.jpg.webp" alt="Описание фото" loading="lazy"> -->
+                                    </div>
+                                </article>
+                            </div>
+
+                            <button class="carousel-btn carousel-btn-next" aria-label="Вперёд" type="button">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="carousel-dots"></div>
+                    </section>
 
                     <section class="related-products">
                         <h2>Сопутствующие товары</h2>
                         <div class="related-grid">
-                            <a href="https://krepcom.ru/?digiSearch=true&term=ножницы%20по%20металлу&params=%7Csort%3DDEFAULT" class="related-card">
+                            <a href="https://krepcom.ru/?digiSearch=true&amp;term=ножницы%20по%20металлу&amp;params=%7Csort%3DDEFAULT" class="related-card">
                                 <img src="65398747.jpg.webp" alt="Ножницы по металлу" loading="lazy">
                                 <h4>Ножницы по металлу</h4>
                             </a>
-                            <a href="https://krepcom.ru/?digiSearch=true&term=перчатки&params=%7Cfilter%3Dcategories%3A547%7Csort%3DDEFAULT" class="related-card">
+                            <a href="https://krepcom.ru/?digiSearch=true&amp;term=перчатки&amp;params=%7Cfilter%3Dcategories%3A547%7Csort%3DDEFAULT" class="related-card">
                                 <img src="перчатки.jpg.webp" alt="Перчатки" loading="lazy">
                                 <h4>Перчатки</h4>
                             </a>
-                            <a href="https://krepcom.ru/?digiSearch=true&term=заклепка&params=%7Cfilter%3Dcategories%3A2%7Csort%3DDEFAULT" class="related-card">
+                            <a href="https://krepcom.ru/?digiSearch=true&amp;term=заклепка&amp;params=%7Cfilter%3Dcategories%3A2%7Csort%3DDEFAULT" class="related-card">
                                 <img src="din_660_mednaya.jpg.webp" alt="Заклепки" loading="lazy">
                                 <h4>Заклепки</h4>
                             </a>
-                            
                         </div>
                     </section>
+
                     <h3 class="section-title">Электрохимическая совместимость (<a href="https://justaddresssss-hue.github.io/main_page/">кликайте для проверки</a>)</h3>
-                    
+
                     <div class="specs specs-wide">
-                      <div class="spec-item">
+                        <div class="spec-item">
                             <span>Сочетается</span>
-                            <strong>
-                                <p>Железо</p>
-                                <p>Алюминий (в т.ч. дюраль (Д16Т и АМг2Т))</p>
-                                <p>Цинк</p>
-                               <p>Хром</p>
-                               <p>Олово</p>
-                              
-                            </strong>
+                            <strong>Железо, алюминий (в т.ч. дюраль Д16Т и АМг2Т), цинк, хром, олово.</strong>
                         </div>
                         <div class="spec-item">
                             <span>Не сочетается</span>
-                            <strong>
-                                <p>Латунь (в т.ч. Л63)</p>
-                                 <p>Бронза</p>
-                                <p>Медь (в т.ч. М1М и М1Т)</p>
-                                <p>Никель и сплавы никеля</p>
-                                <p>Нерж</p>
-                                <p>Свинец</p>
-                                <p>Благородные металлы</p>
-                                <p>Мельхиор</p>
-                                <p>Нейзильбер</p>
-                            </strong>
+                            <strong>Латунь (в т.ч. Л63), бронза, медь (в т.ч. М1М и М1Т), никель и сплавы никеля, нержавеющая сталь, свинец, благородные металлы, мельхиор, нейзильбер.</strong>
                         </div>
-                        
                     </div>
                 </div>
 
@@ -136,36 +132,25 @@
                 <div class="right-column">
                     <div class="info-card">
                         <h3>Низколегированная сталь</h3>
-                        <p>Состав: Углерод (C): 0,05% – 0,25% Железо (Fe): ~95% – 98%. Примеси: марганец (до 0,8%), кремний, сера и фосфор в небольших количествах.йкость).</p>
-                        <p>Свойства: сваривается любыми видами сварки без предварительного подогрева и последующей термообработки. Легко режется, штампуется и куется в холодном 
-                          и горячем состоянии. Не упрочняется термической закалкой до высокой твердости из-за малого процента углерода.</p>
-                        
-                        
+                        <p>Состав: углерод (C): 0,05% – 0,25%, железо (Fe): ~95% – 98%. Примеси: марганец (до 0,8%), кремний, сера и фосфор в небольших количествах.</p>
+                        <p>Свойства: сваривается любыми видами сварки без предварительного подогрева и последующей термообработки. Легко режется, штампуется и куется в холодном и горячем состоянии. Не упрочняется термической закалкой до высокой твердости из-за малого процента углерода.</p>
                     </div>
-
-                    
 
                     <div class="info-card">
                         <h3>Характеристики</h3>
-                        <p>Плотность - около 7850 кг/м³.</p>
-                        <p>Температура плавления - 1420 °C – 1460 °C.</p>
+                        <p>Плотность: около 7850 кг/м³.</p>
+                        <p>Температура плавления: 1420 °C – 1460 °C.</p>
                         <p>Электрическая проводимость: до десяти раз хуже меди.</p>
-                        <p>Теплопроводность - 50–65 Вт/(м·К) при комнатной температуре.</p>
+                        <p>Теплопроводность: 50–65 Вт/(м·К) при комнатной температуре.</p>
                         <p>Низкая коррозионная стойкость.</p>
-                        <p></p>
                     </div>
-
-                    
-
-                    
 
                     <h3 class="section-title">Толщины листов</h3>
                     <div class="sizes">
                         <span>от 0,75 мм</span>
                     </div>
 
-                    
-                    <h3 class="section-title">Приглашаем ознакомиться с ассортиментом электродов на нашем сайте 👇</h3>
+                    <h3 class="section-title">Приглашаем ознакомиться с ассортиментом стальных листов на нашем сайте 👇</h3>
                     <a class="site-link" href="https://krepcom.ru/catalog/konstruktsionnye_materialy/filter/konstruk_type-is-da2ca231d6271f38df25ddf2a84d08cb/material-is-stal/apply/" target="_blank" rel="noopener">
                         Перейти в каталог
                     </a>
@@ -179,14 +164,15 @@
     </div>
 
     <script>
-    (function () {
-        const track = document.querySelector('.carousel-track');
+    // Работает для любого количества каруселей на странице
+    document.querySelectorAll('.carousel-section').forEach(function (section) {
+        const track = section.querySelector('.carousel-track');
         if (!track) return;
 
         const cards = Array.from(track.querySelectorAll('.carousel-card'));
-        const prevBtn = document.querySelector('.carousel-btn-prev');
-        const nextBtn = document.querySelector('.carousel-btn-next');
-        const dotsContainer = document.querySelector('.carousel-dots');
+        const prevBtn = section.querySelector('.carousel-btn-prev');
+        const nextBtn = section.querySelector('.carousel-btn-next');
+        const dotsContainer = section.querySelector('.carousel-dots');
 
         const dots = cards.map((_, i) => {
             const dot = document.createElement('button');
@@ -239,7 +225,7 @@
 
         window.addEventListener('resize', update);
         update();
-    })();
+    });
     </script>
 </body>
 </html>
